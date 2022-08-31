@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 8rem repeat(5, 1fr);
+  justify-content: center;
+  gap: 1rem;
+  width: 25rem;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 3rem;
+  border-radius: 4rem;
+  background-color: #000000;
+}
+
+button {
+  background-color: #313131;
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.button1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.button17 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 11rem;
+  height: 5rem;
+  border-radius: 40px;
+}
+
+.button1,
+.button2,
+.button3 {
+  background-color: #9f9f9f;
+}
+
+.button4,
+.button8,
+.button12,
+.button16,
+.button19 {
+  background-color: #f69906;
+}
+
+button:active {
+  opacity: 0.5;
+}
